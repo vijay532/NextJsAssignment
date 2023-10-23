@@ -16,8 +16,8 @@ export default function Repository({ name, key }) {
   return (
     <div className="row">
       {repo.length > 0 &&
-        repo.map((item, key) => (
-          <div className="col-12 my-2" id={key}>
+        repo.map((item, index) => (
+          <div className="col-12 my-2" key={index}>
             <Name salutation={"Repo Name: "} name={item?.name} />
             <Name salutation={"Visibility: "} name={item?.visibility} />
             <Name salutation={"Forks: "} name={item?.forks} />
