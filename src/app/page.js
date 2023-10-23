@@ -3,10 +3,9 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Name from "./components/name/Name";
 import { getUser } from "./utils";
-import { getMockUser as data } from "./api/getUser";
 
 export default async function Home() {
-  // const data = await getUser();
+  const data = await getUser();
   return (
     <main className={styles.main}>
       <h3 className="mb-4">

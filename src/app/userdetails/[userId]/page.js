@@ -5,7 +5,7 @@ import Picture from "@/app/components/image/Image";
 import Name from "@/app/components/name/Name";
 import "./page.css";
 import ControlledTabs from "@/app/components/tabs/Tabs";
-export default function userdetails(params) {
+export default function Userdetails(params) {
   const [details, setdetails] = useState();
 
   async function computeUserDetails() {
