@@ -12,7 +12,6 @@ export async function getUserDetail(username) {
 }
 
 export async function getFollowDetails(name, follow) {
-  console.log(name, follow, "vijay");
   var data = [];
   if (typeof name !== "undefined" && typeof follow != "undefined") {
     data = fetch(url + "/" + name + "/" + follow).then((resonse) =>
@@ -23,9 +22,9 @@ export async function getFollowDetails(name, follow) {
 }
 
 export async function getRepoDetails(name) {
-  console.log(name, "repo");
-  const data = fetch(url + "/" + name + "/repos").then((resonse) =>
-    resonse.json()
-  );
+  var data = [];
+  if (typeof name !== "undefined") {
+    data = fetch(url + "/" + name + "/repos").then((resonse) => resonse.json());
+  }
   return data;
 }

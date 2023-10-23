@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { getFollowDetails, getUserDetail } from "@/app/utils";
+import { getUserDetail } from "@/app/utils";
 import Picture from "@/app/components/image/Image";
 import Name from "@/app/components/name/Name";
 import "./page.css";
